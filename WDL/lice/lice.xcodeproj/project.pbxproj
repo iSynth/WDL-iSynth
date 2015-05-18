@@ -437,7 +437,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 			};
 			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "lice" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -575,8 +575,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_PREFIX = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -587,9 +593,17 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INSTALL_PATH = /usr/local/lib;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = lice;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
 				SKIP_INSTALL = YES;
 				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -597,8 +611,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -606,11 +626,19 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INSTALL_PATH = /usr/local/lib;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = lice;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
 				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
@@ -618,6 +646,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -628,9 +662,18 @@
 				GCC_VERSION = "$(COMPILER)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
 				SDKROOT = "$(BASE_SDK)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -638,6 +681,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(ALL_DEFS)",
@@ -647,8 +696,17 @@
 				GCC_VERSION = "$(COMPILER)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PREBINDING = NO;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
 				SDKROOT = "$(BASE_SDK)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
@@ -656,8 +714,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_PREFIX = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -668,9 +731,17 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INSTALL_PATH = /usr/local/lib;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = lice32;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
 				SKIP_INSTALL = YES;
 				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -678,8 +749,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F8D4BAD13E974CF004F7633 /* lice.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = "";
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
@@ -688,31 +764,43 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INSTALL_PATH = /usr/local/lib;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = lice32;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SHARED_PRECOMPS_DIR = "$(SHARED_PRECOMPS_DIR)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
 				STRIP_STYLE = "non-global";
 				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
 		4F8D4C1C13E97722004F7633 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = All;
+				SYMROOT = "build-mac";
 			};
 			name = Debug;
 		};
 		4F8D4C1D13E97722004F7633 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = All;
+				SYMROOT = "build-mac";
 				ZERO_LINK = NO;
 			};
 			name = Release;

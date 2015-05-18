@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <UsingTask TaskName="PaceFixLogs" AssemblyFile="$(PACE_FUSION_HOME)PaceFusionUi2013.dll" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,6 +22,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3059A12C-2A45-439B-81EC-201D8ED347A3}</ProjectGuid>
     <RootNamespace>lice</RootNamespace>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -29,12 +31,14 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <OutputPath>.</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <OutputPath>.</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -42,6 +46,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <OutputPath>.</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -49,6 +54,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v120</PlatformToolset>
+    <OutputPath>.</OutputPath>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -135,14 +141,6 @@
     <ClCompile Include="..\libpng\pngwrite.c" />
     <ClCompile Include="..\libpng\pngwtran.c" />
     <ClCompile Include="..\libpng\pngwutil.c" />
-    <ClCompile Include="..\lice\lice.cpp" />
-    <ClCompile Include="..\lice\lice_arc.cpp" />
-    <ClCompile Include="..\lice\lice_colorspace.cpp" />
-    <ClCompile Include="..\lice\lice_line.cpp" />
-    <ClCompile Include="..\lice\lice_palette.cpp" />
-    <ClCompile Include="..\lice\lice_png.cpp" />
-    <ClCompile Include="..\lice\lice_texgen.cpp" />
-    <ClCompile Include="..\lice\lice_textnew.cpp" />
     <ClCompile Include="..\zlib\adler32.c" />
     <ClCompile Include="..\zlib\compress.c" />
     <ClCompile Include="..\zlib\crc32.c" />
@@ -158,6 +156,14 @@
     <ClCompile Include="..\zlib\trees.c" />
     <ClCompile Include="..\zlib\uncompr.c" />
     <ClCompile Include="..\zlib\zutil.c" />
+    <ClCompile Include="lice.cpp" />
+    <ClCompile Include="lice_arc.cpp" />
+    <ClCompile Include="lice_colorspace.cpp" />
+    <ClCompile Include="lice_line.cpp" />
+    <ClCompile Include="lice_palette.cpp" />
+    <ClCompile Include="lice_png.cpp" />
+    <ClCompile Include="lice_texgen.cpp" />
+    <ClCompile Include="lice_textnew.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\libpng\png.h" />
@@ -167,9 +173,6 @@
     <ClInclude Include="..\libpng\pnglibconf.h" />
     <ClInclude Include="..\libpng\pngpriv.h" />
     <ClInclude Include="..\libpng\pngstruct.h" />
-    <ClInclude Include="..\lice\lice_combine.h" />
-    <ClInclude Include="..\lice\lice_extended.h" />
-    <ClInclude Include="..\lice\lice_text.h" />
     <ClInclude Include="..\zlib\crc32.h" />
     <ClInclude Include="..\zlib\deflate.h" />
     <ClInclude Include="..\zlib\gzguts.h" />
@@ -182,6 +185,9 @@
     <ClInclude Include="..\zlib\zlib.h" />
     <ClInclude Include="..\zlib\zutil.h" />
     <ClInclude Include="lice.h" />
+    <ClInclude Include="lice_combine.h" />
+    <ClInclude Include="lice_extended.h" />
+    <ClInclude Include="lice_text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

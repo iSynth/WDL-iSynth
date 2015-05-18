@@ -37,14 +37,8 @@ Icon?
 /WDL/IPlug/IPlug.vcxproj.user
 /WDL/lice/lice.vcxproj.user
 /WDL/IPlug/doc/
-/WorkProjects/
-/ObsoleteProjects/
-IPlugExamples/build_errors.log
-
+/IPlugExamples/build_errors.log
 /IPlugExamples/IPlugEEL/libEEL/build/
-
-/Ports/
-
-/ReaperExtensions/
-
 /IPlugExamples/duplicate.pyc
+/Includes/
+/MyPlugins/
