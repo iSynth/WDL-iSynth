@@ -12,12 +12,16 @@
 *.mode1v3
 *.db
 *.LSOverride
+
 *.xcworkspace
 *.xcuserdata
+#*.xcodeproj
 *.xcschememanagement.plist
+
 build-*
 ipch/*
 gui/*
+releases/*
 
 Icon?
 .DS_Stor*

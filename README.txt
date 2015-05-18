@@ -1,4 +1,6 @@
-WDL / IPlug - Oli Larkin Edition
+Forked from https://github.com/olilarkin/wdl-ol
+
+WDL / IPlug - iSynth Edition.
 
 IPlug is a simple-to-use C++ framework for developing cross platform audio plugins and targeting multiple plugin APIs with the same code. Originally developed by Schwa/Cockos, IPlug has been enhanced by various contributors. IPlug depends on WDL, and that is why this project is called WDL-OL,  although most of the differences from Cockos' WDL are to do with IPlug.
 This version of IPlug targets VST2, VST3, AudioUnit RTAS and AAX (Native) APIs. It can also produce standalone Windows/OSX audio/midi apps and apps for Apple's IOS devices. 
@@ -11,13 +13,14 @@ Discuss WDL on the WDL forum http://forum.cockos.com/forumdisplay.php?f=32
 
 --------------------------------------------
 
-Cockos WDL License
+Cockos WDL License.
 
-Copyright (C) 2005 and later Cockos Incorporated
+Copyright (C) 2005 and later Cockos Incorporated.
 
-Portions copyright other contributors, see each source file for more information
+Portions copyright other contributors, see each source file for more information.
 
-This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
+This software is provided 'as-is', without any express or implied warranty.  
+In no event will the authors be held liable for any damages arising from the use of this software.
 
 Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
 
