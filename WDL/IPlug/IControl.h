@@ -65,7 +65,6 @@ public:
   IRECT* GetTargetRECT() { return &mTargetRECT; } // The mouse target area (default = draw area).
   void SetTargetArea(IRECT pR) { mTargetRECT = pR; }
   virtual void TextFromTextEntry( const char* txt ) { return; } // does nothing by default
-  virtual void PromptUserInputDone() { return; }
 
   virtual void Hide(bool hide);
   bool IsHidden() const { return mHide; }
@@ -121,7 +120,8 @@ public:
   int NAuxParams() { return mAuxParams.GetSize(); }
   
   IPlugBase* GetPlug() { return mPlug; }
-  
+  IGraphics* GetGUI() { return mPlug->GetGUI(); }
+
 protected:
   int mTextEntryLength;
   IText mText;
