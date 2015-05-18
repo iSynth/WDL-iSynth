@@ -442,7 +442,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Steinberg;
 			};
 			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "base" */;
@@ -527,6 +527,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				COMBINE_HIDPI_IMAGES = YES;
+				IPLUG_PATH = "$(IPLUG_PATH)";
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -534,7 +549,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
+				IPLUG_PATH = "$(IPLUG_PATH)";
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
@@ -542,7 +572,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_MODEL_TUNING = G5;
@@ -554,9 +589,18 @@
 				GCC_VERSION = "$(COMPILER)";
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = ../../;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = base;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
 				SDKROOT = "$(BASE_SDK)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -564,7 +608,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
@@ -577,9 +626,17 @@
 				GCC_VERSION = "$(COMPILER)";
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = ../../;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = base;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
 				SDKROOT = "$(BASE_SDK)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
@@ -587,8 +644,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				COMBINE_HIDPI_IMAGES = YES;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = base32;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Debug;
 		};
@@ -596,9 +667,23 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				AAX_FOLDER = "$(AAX_FOLDER)";
+				AAX_SDK = "$(AAX_SDK)";
+				APP_FOLDER = "$(APP_FOLDER)";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				AU_FOLDER = "$(AU_FOLDER)";
+				CA_SDK = "$(CA_SDK)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
+				IPLUG_PATH = "$(IPLUG_PATH)";
 				PRODUCT_NAME = base32;
+				PT9_SDK = "$(PT9_SDK)";
+				RTAS_FOLDER = "$(RTAS_FOLDER)";
+				SYMROOT = "build-mac";
+				VST3_FOLDER = "$(VST3_FOLDER)";
+				VST3_SDK = "$(VST3_SDK)";
+				VST_FOLDER = "$(VST_FOLDER)";
+				WDL_PATH = "$(WDL_PATH)";
 			};
 			name = Release;
 		};
